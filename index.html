@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Garabatos · Librería Papelería en el barrio de las Rosas, Madrid</title>
+<meta name="description" content="Papelería, librería, juguetes y material de bellas artes en la calle Suecia 93, Madrid. Si no lo tenemos, te lo traemos en pocos días.">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+:root{--bg:#fff;--alt:#eef4ff;--fg:#0b1b4d;--mut:#44527f;--ln:#d3e0ff;--bl:#1d4ed8;--bl2:#1740b3;--acf:#fff;--eo:cubic-bezier(.23,1,.32,1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1230;--alt:#0f1a42;--fg:#eef3ff;--mut:#a8b6e0;--ln:#223268;--bl:#6c93ff;--bl2:#8aa9ff;--acf:#07102e}}
+:root[data-theme=dark]{--bg:#0a1230;--alt:#0f1a42;--fg:#eef3ff;--mut:#a8b6e0;--ln:#223268;--bl:#6c93ff;--bl2:#8aa9ff;--acf:#07102e}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.65 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3,nav b{font-family:Outfit,system-ui,sans-serif;font-weight:700;letter-spacing:-.02em}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:14px}
+nav b{font-size:1.5rem}nav .l{display:flex;align-items:center;gap:20px}nav a:not(.btn){color:var(--mut);text-decoration:none;font-size:.95rem}
+@media(max-width:620px){nav a:not(.btn){display:none}}
+.btn{display:inline-block;background:var(--bl);color:var(--acf);padding:13px 26px;border-radius:99px;font:600 1rem "Nunito Sans",sans-serif;text-decoration:none;border:2px solid var(--bl);cursor:pointer;transition:transform 140ms var(--eo),background-color 140ms ease}
+.btn.o{background:transparent;color:var(--bl)}.btn.s{padding:9px 20px}
+.btn:active{transform:scale(.97)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--bl);outline-offset:3px}
+@media(hover:hover) and (pointer:fine){.btn:hover{background:var(--bl2);border-color:var(--bl2);color:var(--acf)}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:24px 0 72px}
+@media(max-width:780px){.hero{grid-template-columns:1fr}}
+h1{font-size:clamp(2.5rem,7.5vw,4.6rem);line-height:1.02}
+.hero p{color:var(--mut);margin:20px 0 26px;max-width:30em;font-size:1.08rem}
+.bt{display:flex;gap:12px;flex-wrap:wrap}
+.st{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;font-size:.92rem;font-weight:600;color:var(--mut)}
+.st i{width:10px;height:10px;border-radius:50%;background:var(--mut)}.st.on i{background:#16a34a}
+.ph{position:relative}.ph img{display:block;width:100%;height:auto;border-radius:140px 24px 24px 24px;border:1px solid var(--ln)}
+.ph svg{position:absolute;inset:-14px;width:calc(100% + 28px);height:calc(100% + 28px);pointer-events:none;overflow:visible}
+.ph path{fill:none;stroke:var(--bl);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 700ms var(--eo) 300ms forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero>div:first-child>*{animation:in 300ms var(--eo) both}.hero>div:first-child>:nth-child(2){animation-delay:50ms}.hero>div:first-child>:nth-child(3){animation-delay:100ms}.hero>div:first-child>:nth-child(4){animation-delay:150ms}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+section{padding:60px 0}.alt{background:var(--alt)}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);line-height:1.08;margin-bottom:12px}
+.two{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px}@media(max-width:780px){.two{grid-template-columns:1fr;gap:20px}}
+.lead{color:var(--mut);max-width:26em}
+.pl div{padding:18px 0;border-bottom:1px solid var(--ln);display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:baseline}
+@media(max-width:520px){.pl div{grid-template-columns:1fr;gap:2px}}
+.pl h3{font-size:1.4rem}.pl p{color:var(--mut)}
+.band{margin:0;position:relative}.band img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover}
+.band figcaption{position:absolute;left:0;right:0;bottom:0;padding:50px 22px 18px;color:#fff;background:linear-gradient(transparent,rgba(5,15,60,.8));font:700 1.25rem Outfit,sans-serif}
+.stp{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px;margin:28px 0}
+.stp li{counter-increment:s;padding-top:14px;border-top:3px solid var(--bl)}.stp li:before{content:counter(s);font:700 2.2rem Outfit,sans-serif;color:var(--bl);display:block;line-height:1}
+.stp b{display:block;font:700 1.15rem Outfit,sans-serif;margin:6px 0 2px}.stp span{color:var(--mut)}
+.ask{display:flex;gap:10px;flex-wrap:wrap;max-width:560px}.ask input{flex:1;min-width:200px;font:400 1rem "Nunito Sans",sans-serif;color:var(--fg);background:var(--bg);border:2px solid var(--ln);border-radius:99px;padding:12px 20px}
+.q{border-left:4px solid var(--bl);padding:4px 0 4px 22px;margin-bottom:34px;max-width:46em}.q p{font:500 1.25rem/1.5 Outfit,sans-serif}.q small{display:block;color:var(--mut);margin-top:8px}.q em{display:block;font-style:normal;color:var(--mut);font-size:.95rem;margin-top:10px;padding-left:14px;border-left:2px solid var(--ln)}
+table{border-collapse:collapse;width:100%;max-width:460px}td{padding:11px 0;border-bottom:1px solid var(--ln)}td:last-child{text-align:right}tr.t td{font-weight:700;color:var(--bl)}
+.note{color:var(--mut);font-size:.9rem;margin-top:14px;max-width:30em}
+dl{display:grid;gap:18px}dt{color:var(--mut);font-size:.9rem}dd{font:600 1.15rem Outfit,sans-serif}dd a{color:var(--fg)}
+footer{padding:28px 0;color:var(--mut);font-size:.9rem}
+@media(prefers-reduced-motion:reduce){.hero>div:first-child>*{animation-name:fade}@keyframes fade{from{opacity:0}to{opacity:1}}.ph path{animation:none;stroke-dashoffset:0}.btn:active{transform:none}}
+</style></head><body>
+<div class="w"><nav><b>Garabatos</b><div class="l"><a href="#productos">Productos</a><a href="#opiniones">Opiniones</a><a href="#horario">Horario</a><a class="btn s" href="tel:+34913134295">Llamar</a></div></nav>
+<header class="hero"><div><div class="st" id="st" role="status"><i></i><span>Comprobando horario</span></div><h1>Lo que buscas, lo tenemos. Y si no, te lo traemos.</h1><p>Papelería, librería, juguetes y material de bellas artes en el barrio de las Rosas. Un surtido enorme, buenos precios y gente que te aconseja.</p><div class="bt"><a class="btn" href="tel:+34913134295">Llamar al 913 13 42 95</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Calle+Suecia+93+Madrid" target="_blank" rel="noopener">Cómo llegar</a></div></div>
+<div class="ph"><img src="images/fachada.jpg" width="408" height="306" alt="Fachada azul de la Librería Papelería Garabatos"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" vector-effect="non-scaling-stroke" d="M8 14C30 -2 70 -2 92 8S106 40 98 62 90 100 62 102 14 106 4 84 -4 40 8 14Z"/></svg></div></header></div>
+<section id="productos" class="alt"><div class="w two"><div><h2>Un poco de todo, bien surtido</h2><p class="lead">Desde el cole hasta el estudio de arte. Entra a mirar sin prisa.</p></div>
+<div class="pl"><div><h3>Papelería</h3><p>Cuadernos, bolígrafos, carpetas y todo para el cole y la oficina.</p></div><div><h3>Librería</h3><p>Lectura para todas las edades y lo que necesitas para estudiar.</p></div><div><h3>Juguetes</h3><p>Juegos y regalos para los pequeños del barrio.</p></div><div><h3>Bellas artes</h3><p>Pinturas, pinceles, papeles y lienzos para crear.</p></div></div></div></section>
+<figure class="band"><img src="images/interior.jpg" width="613" height="298" alt="Interior de la tienda con estanterías llenas de material de papelería"><figcaption>Pasillos llenos de color y gente que sabe dónde está cada cosa.</figcaption></figure>
+<section><div class="w"><h2>¿No lo encuentras? Te lo traemos</h2><p class="lead">Pide lo que necesites y lo buscamos por ti.</p>
+<ol class="stp"><li><b>Cuéntanos qué buscas</b><span>En la tienda, por teléfono o por email.</span></li><li><b>Lo pedimos</b><span>Lo encargamos a nuestros proveedores.</span></li><li><b>Te avisamos</b><span>En pocos días puedes pasar a recogerlo.</span></li></ol>
+<div class="ask"><input id="qq" type="text" placeholder="Escribe aquí lo que buscas" aria-label="Qué estás buscando"><a class="btn" id="qa" href="mailto:Jcgarabatos@gmail.com">Preguntar por email</a></div></div></section>
+<section id="opiniones" class="alt"><div class="w"><h2>Lo que dicen los vecinos</h2><div style="height:20px"></div>
+<div class="q"><p>Muy recomendado el sitio, tienen todo lo que necesito, los precios muy buenos y siempre me atienden con mucha amabilidad.</p><small>Local Guide, 35 reseñas en Google</small><em>Respuesta del propietario: Muchas gracias por su valoración. Buen fin de semana.</em></div>
+<div class="q"><p>Mucho surtido de productos y me encantó que los encargados conocen demasiado sus productos y te asesoran de manera excelente. Definitivamente volvería.</p><small>Adriana S., en Google</small><em>Respuesta del propietario: Muchas gracias por su valoración. Felices fiestas.</em></div>
+<div class="q"><p>Es la papelería del barrio, la conozco desde hace más de 20 años. El dueño siempre muy amable y atento y con buenos consejos. Casi siempre encuentro lo que busco.</p><small>Karen C., en Google</small></div></div></section>
+<section id="horario"><div class="w two"><div><h2>Horario</h2><table id="tb"><tr><td>Lunes</td><td>10:00–13:30 y 17:00–20:30</td></tr><tr><td>Martes</td><td>10:00–13:30 y 17:00–20:30</td></tr><tr><td>Miércoles</td><td>10:00–13:30 y 17:00–20:30</td></tr><tr><td>Jueves</td><td>10:00–13:30 y 17:00–20:30</td></tr><tr><td>Viernes</td><td>10:00–13:30 y 17:00–20:30</td></tr><tr><td>Sábado</td><td>10:30–14:00</td></tr><tr><td>Domingo</td><td>Cerrado</td></tr></table><p class="note">En festivos el horario puede cambiar. Llámanos para confirmarlo.</p></div>
+<div><h2>Dónde estamos</h2><dl><div><dt>Dirección</dt><dd>Calle Suecia, 93, Madrid</dd></div><div><dt>Teléfono</dt><dd><a href="tel:+34913134295">913 13 42 95</a></dd></div><div><dt>Email</dt><dd><a href="mailto:Jcgarabatos@gmail.com">Jcgarabatos@gmail.com</a></dd></div></dl></div></div></section>
+<footer class="w">© 2026 Librería Papelería Garabatos</footer>
+<script>
+var S=[[],[[600,810],[1020,1230]],[[600,810],[1020,1230]],[[600,810],[1020,1230]],[[600,810],[1020,1230]],[[600,810],[1020,1230]],[[630,840]]];
+function f(m){var h=Math.floor(m/60),n=m%60;return h+':'+(n<10?'0':'')+n}
+var D=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],p={};
+new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+var d=D.indexOf(p.weekday),now=(+p.hour%24)*60+ +p.minute,txt='',on=false;
+for(var o=0;o<8&&!txt;o++){var sl=S[(d+o)%7];for(var i=0;i<sl.length&&!txt;i++){var a=sl[i][0],b=sl[i][1];
+if(o===0&&now>=a&&now<b){txt='Abierto ahora, hasta las '+f(b);on=true}
+else if(o===0&&now<a){txt='Cerrado ahora. Abrimos hoy a las '+f(a)}
+else if(o===1){txt='Cerrado ahora. Abrimos mañana a las '+f(a)}
+else if(o>1){txt='Cerrado ahora. Abrimos el próximo día a las '+f(a)}}}
+var st=document.getElementById('st');st.lastChild.textContent=txt;if(on)st.className='st on';
+var rows=document.querySelectorAll('#tb tr');if(rows[(d+6)%7])rows[(d+6)%7].className='t';
+var qq=document.getElementById('qq'),qa=document.getElementById('qa');
+qq.oninput=function(){qa.href='mailto:Jcgarabatos@gmail.com?subject='+encodeURIComponent('Consulta de producto')+'&body='+encodeURIComponent('Hola, estoy buscando: '+qq.value)};
+</script></body></html>
